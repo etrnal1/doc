@@ -63,7 +63,7 @@ input[type=radio] {
 .error.ui-radio {
   border-color: #f4615c; }
 
-/*IE7, IE8 使用图片作UI*/
+/*IE7, IE8 浣跨敤鍥剧墖浣淯I*/
 @media \0screen\,screen\9 {
   .ui-radio {
     background: url(ui/images/Radio/radio.png) no-repeat; }
@@ -75,11 +75,11 @@ input[type=radio] {
     background-position: 0 -40px; }
   [checked] + .ui-radio:hover,
   [checked][disabled] + .ui-radio {
-    /* disabled态使用高亮边框 */
+    /* disabled鎬佷娇鐢ㄩ珮浜竟妗� */
     background-position: 0 -60px; }
   [defaultChecked] + .ui-radio:hover,
   [defaultChecked][disabled] + .ui-radio {
-    /* disabled态使用高亮边框 */
+    /* disabled鎬佷娇鐢ㄩ珮浜竟妗� */
     background-position: 0 -60px; }
   [disabled] + .ui-radio {
     background-position: 0 -20px;
@@ -101,7 +101,7 @@ input[type=checkbox] {
   cursor: pointer;
   z-index: -1; }
 
-/* 无绝对定位的模拟生成实现 */
+/* 鏃犵粷瀵瑰畾浣嶇殑妯℃嫙鐢熸垚瀹炵幇 */
 .ui-checkbox {
   display: inline-block;
   width: 20px;
@@ -159,7 +159,7 @@ input[type=checkbox] {
 .error.ui-checkbox {
   color: #f4615c; }
 
-/*IE7, IE8 使用图片作UI*/
+/*IE7, IE8 浣跨敤鍥剧墖浣淯I*/
 @media \0screen\,screen\9 {
   .ui-checkbox {
     background: url(ui/images/Checkbox/checkbox.png) no-repeat; }
@@ -172,7 +172,7 @@ input[type=checkbox] {
   [defaultChecked][disabled] + .ui-checkbox {
     background-position: 0 -40px; }
   [disabled] + .ui-checkbox {
-    /* disabled态使用高亮边框 */
+    /* disabled鎬佷娇鐢ㄩ珮浜竟妗� */
     background-position: 0 -20px;
     filter: alpha(opacity=38); } }
 
@@ -626,7 +626,7 @@ input.ui-button-warning.loading {
   background: url(ui/images/Button/loading-white.png), linear-gradient(transparent, transparent);
   background-size: 100%; }
 
-/* IE8 loading文字隐藏控制-背景色覆盖 */
+/* IE8 loading鏂囧瓧闅愯棌鎺у埗-鑳屾櫙鑹茶鐩� */
 @media \0screen\,screen\9 {
   .ui-button.loading:before {
     width: auto;
@@ -758,7 +758,7 @@ div.ui-input > input {
 .ui-input-x:hover > .ui-input {
   border-color: #ababaf; }
 
-/* 注意相邻位置，如果文本域前后位置发生变化，表单验证组件Validate.js 中 getTarget那里逻辑也要变化 */
+/* 娉ㄦ剰鐩搁偦浣嶇疆锛屽鏋滄枃鏈煙鍓嶅悗浣嶇疆鍙戠敓鍙樺寲锛岃〃鍗曢獙璇佺粍浠禫alidate.js 涓� getTarget閭ｉ噷閫昏緫涔熻鍙樺寲 */
 .ui-input-x > input:focus ~ .ui-input {
   border-color: #2486ff; }
 
@@ -798,12 +798,12 @@ span.ui-search-input {
 .ui-search-input > .error:focus ~ .ui-icon-search {
   background-color: #f4615c; }
 
-/* IE使用png图片, 虽然IE9+支持SVG，但是貌似渲染太慢，会暴露色块 */
+/* IE浣跨敤png鍥剧墖, 铏界劧IE9+鏀寔SVG锛屼絾鏄矊浼兼覆鏌撳お鎱紝浼氭毚闇茶壊鍧� */
 .ui-icon-search,
 .ui-search-right > .ui-icon-search:after {
   background: #b6bbc6 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAPdJREFUeNpi+k9lwMRAZYDLwCNAHAnEMkDMDqUjoeL4AZqLfwNxFhAz4MEg+V+4vIxuYApUjBOIG4H4DhD/hNKNUHEGqDqCBh6B8rmA+CgO9Ueh8gxQ9XgjZSqUrgBiKxwhBBIvg7KnEApDcajNdwikjLtQdVKEXPgSSssSiEcZKP2KULIRh9KPCRj4FEqLEjLQEUovJ2DgYihtRygMD5MYy4eJSYfZRKZDEE4C4n+EDPxFRE5hwGcoAw6vgbwTAU0azFA6BohPQQ3BaSgDGSXUXyyG5lNiIDZDhWESLBQUe7OBmA+IFwBxMUyCEexMOhSwZAOAAAMAVJM+EQ2rrOoAAAAASUVORK5CYII=) no-repeat; }
 
-/* IE13+和其他现代浏览器使用SVG */
+/* IE13+鍜屽叾浠栫幇浠ｆ祻瑙堝櫒浣跨敤SVG */
 @supports (display: none) {
   .ui-icon-search,
   .ui-search-right > .ui-icon-search:after {
@@ -977,7 +977,7 @@ div.ui-range-input > input {
 
 .ui-range {
   display: inline;
-  /*  重要，不会换行  */
+  /*  閲嶈锛屼笉浼氭崲琛�  */
   position: absolute;
   visibility: visible; }
 
@@ -1034,7 +1034,7 @@ input[type='color'] {
 
 .ui-color-track {
   display: inline;
-  /*  重要，不会换行  */
+  /*  閲嶈锛屼笉浼氭崲琛�  */
   position: absolute;
   width: 40px;
   height: 40px;
@@ -1351,7 +1351,7 @@ div.ui-textarea > textarea {
 .ui-textarea-x:hover > .ui-textarea {
   border-color: #ababaf; }
 
-/* 注意相邻位置，如果文本域前后位置发生变化，表单验证组件Validate.js 中 getTarget那里逻辑也要变化 */
+/* 娉ㄦ剰鐩搁偦浣嶇疆锛屽鏋滄枃鏈煙鍓嶅悗浣嶇疆鍙戠敓鍙樺寲锛岃〃鍗曢獙璇佺粍浠禫alidate.js 涓� getTarget閭ｉ噷閫昏緫涔熻鍙樺寲 */
 .ui-textarea-x > textarea:focus ~ .ui-textarea,
 .ui-textarea-x > .textarea:focus ~ .ui-textarea {
   border-color: #2486ff; }
@@ -1551,7 +1551,7 @@ input + .ui-placeholder {
 :checked:disabled + .ui-switch:hover {
   color: #2486ff; }
 
-/*IE7, IE8 使用图片作UI*/
+/*IE7, IE8 浣跨敤鍥剧墖浣淯I*/
 @media \0screen\,screen\9 {
   .ui-switch {
     border: 0 none;
@@ -1596,7 +1596,7 @@ input + .ui-placeholder {
   background-image: none;
   filter: none; }
 
-/* 多个弹框出现的时候，隐藏后面弹框的背景 */
+/* 澶氫釜寮规鍑虹幇鐨勬椂鍊欙紝闅愯棌鍚庨潰寮规鐨勮儗鏅� */
 .ui-dialog-container + .ui-dialog-container {
   -webkit-transition: background-color .2s;
   transition: background-color .2s;
@@ -1780,9 +1780,9 @@ input + .ui-placeholder {
  *
 **/
 /*
- * 结构如下：
+ * 缁撴瀯濡備笅锛�
  * <div class='ui-loading'>
-     <i class='ui-loading-icon'>  <!-- 使用s标签表示小尺寸的loading图标 -->
+     <i class='ui-loading-icon'>  <!-- 浣跨敤s鏍囩琛ㄧず灏忓昂瀵哥殑loading鍥炬爣 -->
  *
 */
 .ui-loading {
@@ -1829,7 +1829,7 @@ s.ui-loading-icon {
   background: url(ui/images/Loading/loading-white-s.gif);
   background: url(ui/images/Loading/loading-white-s.png), linear-gradient(transparent, transparent); }
 
-/* 更现代浏览器纯CSS生成 */
+/* 鏇寸幇浠ｆ祻瑙堝櫒绾疌SS鐢熸垚 */
 @supports (mask: none) or (-webkit-mask: none) {
   .ui-loading-icon {
     position: relative;
@@ -1920,7 +1920,7 @@ s.ui-loading-icon {
 .ui-tips[data-title]:hover {
   outline: none; }
 
-/* 朝下的情况 */
+/* 鏈濅笅鐨勬儏鍐� */
 .reverse.ui-tips[data-title]::before {
   top: auto;
   bottom: -42px; }
@@ -1930,7 +1930,7 @@ s.ui-loading-icon {
   top: auto;
   bottom: -12px; }
 
-/* 下面是 IE7 IE8 玩耍的代码 */
+/* 涓嬮潰鏄� IE7 IE8 鐜╄€嶇殑浠ｇ爜 */
 .ui-tips .ui-tips-before,
 .ui-tips .ui-tips-after {
   display: none;
@@ -1964,7 +1964,7 @@ s.ui-loading-icon {
 .ui-tips:focus .ui-tips-after {
   display: block; }
 
-/* 下面是JS创建的tips效果 */
+/* 涓嬮潰鏄疛S鍒涘缓鐨則ips鏁堟灉 */
 .ui-tips-x {
   text-align: center;
   position: absolute;
@@ -1981,7 +1981,7 @@ s.ui-loading-icon {
   top: 0;
   left: 0; }
 
-/* 右侧展示的tips效果 */
+/* 鍙充晶灞曠ず鐨則ips鏁堟灉 */
 .ui-tips-rotate {
   margin-left: 10px; }
 
@@ -1995,7 +1995,7 @@ s.ui-loading-icon {
   top: 50%;
   margin-top: -6px; }
 
-/* 朝下展示的tips效果 */
+/* 鏈濅笅灞曠ず鐨則ips鏁堟灉 */
 .ui-tips-reverse {
   margin-top: 10px; }
 
@@ -2006,7 +2006,7 @@ s.ui-loading-icon {
   left: 50%;
   margin-left: -6px; }
 
-/* 错误提示的tips效果 */
+/* 閿欒鎻愮ず鐨則ips鏁堟灉 */
 .ui-tips-error:not(.none) {
   -webkit-animation: fadeIn .2s, falldown .2s;
   animation: fadeIn .2s, falldown .2s; }
@@ -2065,7 +2065,7 @@ s.ui-loading-icon {
  *
  * @Pagination.css
  * @author xinxuzhang
- * @create 15-06-26 ↓7.4%
+ * @create 15-06-26 鈫�7.4%
  *
 **/
 /*.ui-page-x {}*/
@@ -2361,7 +2361,7 @@ span.ui-month-range-input > input {
 div.ui-month-range-input {
   width: 195px; }
 
-/* Chrome-window/iOS 月份日期控件会根据系统添加中文描述，宽度不定，因此，宽度使用自动宽度 */
+/* Chrome-window/iOS 鏈堜唤鏃ユ湡鎺т欢浼氭牴鎹郴缁熸坊鍔犱腑鏂囨弿杩帮紝瀹藉害涓嶅畾锛屽洜姝わ紝瀹藉害浣跨敤鑷姩瀹藉害 */
 @supports (-webkit-appearance: none) {
   span.ui-time-input > input[type=time],
   span.ui-month-input > input[type=month] {
@@ -2392,7 +2392,7 @@ div.ui-month-range-input {
   top: 10px;
   cursor: pointer; }
 
-/* 选择浮层 */
+/* 閫夋嫨娴眰 */
 .ui-date-container {
   display: none;
   position: absolute;
