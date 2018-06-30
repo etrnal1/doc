@@ -1,8 +1,0 @@
-
-
-# 部署
-fabric
-
-
-# 环境隔离:
-zc.buildout

@@ -1,9 +1,0 @@
-Django
-
-django-celery
-django-debug-toolbar
-django-extensions
-django-hosts
-
-
-
