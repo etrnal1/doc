@@ -1,4 +1,0 @@
-
-
-# install
-brew install glide
