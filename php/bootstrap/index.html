@@ -9,15 +9,28 @@
     <style type="text/css">
       body{
         padding-top:70px;
+        padding-bottom: 50px;
       }
       .carousel {
             height: 500px;
+            margin-bottom: 60px;
         }
         .carousel .item {
             height: 500px;
         }
         .carousel .item img {
             width: 100%;
+        }
+        #summary .col-md-4{
+          text-align: center;
+        }
+        hr.divider{
+          margin:40px 0;
+        }
+        .ss{
+          font-size: 50px;
+          color:#2a6496;
+          margin-top:120px;
         }
     </style>
  <!-- Bootstrap -->
@@ -57,6 +70,7 @@
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">综述 <span class="sr-only">(current)</span></a></li>
         <li><a href="#">简述</a></li>
+        <li><a href="" data-toggle="modal" data-target="#about">关于</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">品类<span class="caret"></span></a>
           <ul class="dropdown-menu">
@@ -152,8 +166,43 @@
     <span class="sr-only">下一页</span>
   </a>
 </div>
+<div class="container" id="summary">
+<div class="row">
+  <div class="col-md-4" style="background: red;height: 300px"></div>
+  <div class="col-md-4" style="background: green;height: 300px"></div>
+  <div class="col-md-4" style="background: black; height:300px;"></div>
+</div>
+  <hr class="divider">
+</div>
+<!-- 标签页 由标签页与标签内容组成 -->
+<div  >
 
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">saface</a></li>
+    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">apple</a></li>
+    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">chrome</a></li>
+    <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">google</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="home">
+     <p class="ss">saface</p> 
+    </div>
+    <div role="tabpanel" class="tab-pane" id="profile">chrome</div>
+    <div role="tabpanel" class="tab-pane" id="messages">google</div>
+    <div role="tabpanel" class="tab-pane" id="settings">apple</div>
+  </div>
+25886
+</div>
     
+    <hr class="divider">
+
+    <footer>
+      <p class="pull-right"><a href="#">回到顶部</a></p>
+      <p>@2018制作</p>
+    </footer>
     <script src="/js/bootstrap.min.js"></script>
   </body>
 </html>
