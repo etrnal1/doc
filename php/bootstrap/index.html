@@ -8,7 +8,7 @@
     <title>栅格系统学习</title>
     <style type="text/css">
       body{
-        padding-top:70px;
+       
         padding-bottom: 50px;
       }
       .carousel {
@@ -56,7 +56,7 @@
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#demo-navbar" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -66,7 +66,7 @@
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <div class="collapse navbar-collapse" id="demo-navbar">
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">综述 <span class="sr-only">(current)</span></a></li>
         <li><a href="#">简述</a></li>
@@ -74,13 +74,13 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">品类<span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">生物</a></li>
-            <li><a href="#">化学</a></li>
-            <li><a href="#">历史</a></li>
+            <li><a href="#1">生物</a></li>
+            <li><a href="#2">化学</a></li>
+            <li><a href="#3">历史</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="#">地理</a></li>
+            <li><a href="#4">地理</a></li>
             <li role="separator" class="divider"></li>
-            <li><a href="#">政治</a></li>
+            <li><a href="#5">政治</a></li>
           </ul>
         </li>
       </ul>
@@ -178,11 +178,11 @@
 <div  >
 
   <!-- Nav tabs -->
-  <ul class="nav nav-tabs" role="tablist">
-    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">saface</a></li>
-    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">apple</a></li>
-    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">chrome</a></li>
-    <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">google</a></li>
+  <ul class="nav nav-tabs" role="tablist" id="tab-list">
+    <li role="presentation" class="active"><a href="#1" aria-controls="home" role="tab" data-toggle="tab">saface</a></li>
+    <li role="presentation"><a href="#2" aria-controls="profile" role="tab" data-toggle="tab">apple</a></li>
+    <li role="presentation"><a href="#3" aria-controls="messages" role="tab" data-toggle="tab">chrome</a></li>
+    <li role="presentation"><a href="#4" aria-controls="settings" role="tab" data-toggle="tab">google</a></li>
   </ul>
 
   <!-- Tab panes -->
@@ -203,6 +203,17 @@
       <p class="pull-right"><a href="#">回到顶部</a></p>
       <p>@2018制作</p>
     </footer>
+   <!--  弹出框 -->
+
     <script src="/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(function(){
+        $(#demo-navbar .dropdown-menu a).click(function(){
+          var href = $(this).attr('href');
+          $("#tab-list a[href='"+href+"']").tab("show");
+
+        })
+      })
+    </script>
   </body>
 </html>
