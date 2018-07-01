@@ -2,9 +2,23 @@
 
 ## 栅格系统
 
-    把一个页面等分为12行，称为栅格系统
-      col-md-2   
-      如果超过12 ，则会另起一行
+```html
+把一个页面等分为12行，称为栅格系统
+  col-md-2   col-md-10
+  如果超过12 ，则会另起一行
+  <div class="contatiner">
+     <div class="row">
+         <div class="col-md-2">
+             
+         </div>
+         
+         进行偏移 中等占2
+         <div class="col-md-10 col-md-offset-3">
+             
+         </div>
+      </div> 
+ </div>
+```
 ### contatiner 
 
 ### 	容器
@@ -35,7 +49,7 @@ navsidebar  侧边栏
 
 ### javascript 插件
 
-使用轮播图 。
+使用轮播图 
 
 ### 
 
@@ -43,11 +57,13 @@ navsidebar  侧边栏
 
 col   列     row  行   nav  导航栏   panel 面板
 
-padding-bottom  
+padding-bottom  设置元素的底部空白
 
 z-index
 
-margin-bottom
+margin-bottom 设置元素的下边框
+
+position:fixed   生成绝对定位的元素
 
 
 
