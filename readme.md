@@ -1,4 +1,19 @@
 ##mac 
+
+
+##安装composer
+打开网站
+[composer] https://www.phpcomposer.com/
+
+ php -r "copy('https://install.phpcomposer.com/installer', 'composer-setup.php');"
+
+ php composer-setup.php
+
+ ### 设置国内镜像
+ composer config -g repo.packagist composer https://packagist.phpcomposer.com
+
+ ### 设置全局
+ sudo mv composer.phar /usr/local/bin/composer
    
 
    安装 github , 配置github 公钥

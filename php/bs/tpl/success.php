@@ -25,11 +25,9 @@
 <body>
 
  <div class="error">
- 		<?php $tips; ?>
+ 		<?=$tips; ?>
 
- 		<a href="index.php?sid=<?=$_GET['sid'];?>">
-               返回首页
- 		</a>
+ 		<a href="index.php?sid=<?=$_GET['sid'];?>"></a>
  </div>
 
 </body>

@@ -39,7 +39,7 @@ function insert($conn,$table,$data)
 	$values = implode(',',parseValue(array_values($data)));
 	//insert into bbs(username,password) valuse('liwenkai')
 	$sql = "insert into $table($fields) values($values)";
-	
+	echo $sql;
 	$result = mysqli_query($conn,$sql);
 	
 	if($result){

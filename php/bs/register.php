@@ -1,17 +1,30 @@
 <?php 
 
-// 
+echo 13;
 
-//var_dump($_POST);
+include 'common.php';
 
- $username = $data['username'] = trim($_POST['username']);
+  $data['username'] = trim($_POST['username']);
 
- $password= $data['password']  = md5($_POST['pwd']);
+ $data['password']  = md5(trim($_POST['pwd']));
 
-   $retime =$data['retime'] =  time();
+$data['retime'] =  time();
 
 //
-$conn  =  mysqli_connect('localhost','root','root');
+$e= insert($conn,'user',$data);
+
+var_dump($e);
+
+echo "13";
+
+if($e){
+	$tips='用户注册成功';
+	include  'tpl/success.php';
+
+}else{
+	$tips='用户注册失败';
+	include 'tpl/error.php';
+}
 
 
 //选择数据库
