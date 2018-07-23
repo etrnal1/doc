@@ -1,3 +1,6 @@
-﻿document.write("<h1>这是一个标题</h1>");
+document.write("<h1>这是一个标题</h1>");
+nhhhh
+<button type="button" onclick="alert('欢迎')">
 
-<button type="button" onclick="alert('欢迎')"> </button>
+AaAaA					
+ </button>
